@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-blackhole-700;
+  }
+  
+  body {
+    @apply bg-blackhole-950 text-gray-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-blackhole-800 hover:bg-blackhole-700 text-gray-200;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 bg-blackhole-900 border border-blackhole-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-blackhole-900 border border-blackhole-800 rounded-lg p-4;
+  }
+  
+  .state-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .state-NEW {
+    @apply bg-blue-900/50 text-blue-300 ring-1 ring-blue-800;
+  }
+  
+  .state-CLAIMED {
+    @apply bg-yellow-900/50 text-yellow-300 ring-1 ring-yellow-800;
+  }
+  
+  .state-RESPONDED {
+    @apply bg-purple-900/50 text-purple-300 ring-1 ring-purple-800;
+  }
+  
+  .state-RESOLVED {
+    @apply bg-green-900/50 text-green-300 ring-1 ring-green-800;
+  }
+  
+  .state-ARCHIVED {
+    @apply bg-gray-900/50 text-gray-400 ring-1 ring-gray-800;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-blackhole-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blackhole-700 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blackhole-600;
+}
+
+/* Loading animation */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
