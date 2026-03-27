@@ -208,4 +208,4 @@ This is a production demo. For the full product roadmap, see ROADMAP.md.
 
 ## 📄 License
 
-MIT License - see LICENSE file for details.
+MIT License
