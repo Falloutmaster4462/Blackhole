@@ -210,8 +210,3 @@ This is a production demo. For the full product roadmap, see ROADMAP.md.
 
 MIT License - see LICENSE file for details.
 
-## 🙋 Support
-
-- Documentation: /docs
-- Issues: GitHub Issues
-- Email: support@blackhole.dev
